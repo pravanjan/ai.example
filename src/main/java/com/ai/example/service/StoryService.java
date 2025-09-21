@@ -16,8 +16,7 @@ public class StoryService {
 
     public String getStory(StoryInput storyInput){
         String message = "Generate a story where given title"+storyInput.title()+" story description is "+storyInput.description();
-        ollamaChatModel.call(message);
-    return null;
+        return   ollamaChatModel.call(message);
 
     }
 }
